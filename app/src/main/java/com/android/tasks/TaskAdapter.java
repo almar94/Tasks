@@ -37,7 +37,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         TextView show;
         public TaskViewHolder(@NonNull View itemView) {
             super(itemView);
-            show = itemView.findViewById(R.id.tv1);
+            show = itemView.findViewById(R.id.tvShow);
         }
     }
 }
