@@ -24,11 +24,10 @@ public class Taskadd extends AppCompatActivity {
         addANDShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String  newTask = ed.getText().toString();
-                Bundle Bundle1 = new Bundle();
+                    String  newTask = ed.getText().toString();
+                    Task task = new Task(newTask);
+                    DataManager.allTasksArrayList.add(task);
                 Intent intent = new Intent(Taskadd.this, MainActivity.class);
-                Bundle1.putString("newTask", newTask);
-                intent.putExtra("Bundle1", Bundle1);
                 startActivity(intent);
             }
         });

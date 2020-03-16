@@ -21,13 +21,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull TaskViewHolder holder, int position) {
-       // Task task1 = DataManager.get(position);
-      //  holder.show.setText(" " + task1.task);
+        Task task1 = DataManager.allTasksArrayList.get(position);
+        holder.show.setText(" " + task1.getTask());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return DataManager.allTasksArrayList.size();
     }
 
 

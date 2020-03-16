@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     final int CODE = 2594;
     Button addNewTask;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, CODE);
             }
         });
+
 
         RecyclerView rv = findViewById(R.id.Recycler11);
         final TaskAdapter adapter = new TaskAdapter();
