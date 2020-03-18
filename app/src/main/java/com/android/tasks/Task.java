@@ -2,7 +2,7 @@ package com.android.tasks;
 
 public class Task {
 
-    String task;
+     private String task;
 
     public Task(String task) {
         this.task = task;

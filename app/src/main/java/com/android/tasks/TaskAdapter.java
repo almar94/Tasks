@@ -1,8 +1,10 @@
 package com.android.tasks;
 
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,7 +17,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     @Override
     public TaskViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.activity_taskshow, parent, false);
+                .inflate(R.layout.activity_taskshow, parent, false);
         return new TaskViewHolder(view);
     }
 
@@ -31,13 +33,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     }
 
 
-
-
     public class TaskViewHolder extends RecyclerView.ViewHolder {
         TextView show;
+
         public TaskViewHolder(@NonNull View itemView) {
             super(itemView);
             show = itemView.findViewById(R.id.tvShow);
+
         }
     }
 }

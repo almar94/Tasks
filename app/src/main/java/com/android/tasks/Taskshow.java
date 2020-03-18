@@ -3,7 +3,9 @@ package com.android.tasks;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Taskshow extends AppCompatActivity {
@@ -12,6 +14,8 @@ public class Taskshow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taskshow);
+
+
 
     }
 }
