@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-android:layout_height="100dp">
+    android:layout_height="100dp">
 
 
     <TextView
@@ -22,8 +22,26 @@ android:layout_height="100dp">
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="5dp" />
 
+    <TextView
+        android:id="@+id/st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvShow"
+        app:layout_constraintStart_toStartOf="@+id/tvShow"
+        app:layout_constraintTop_toTopOf="@+id/tvShow" />
 
-
+    <Button
+        android:id="@+id/showTask_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/st"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

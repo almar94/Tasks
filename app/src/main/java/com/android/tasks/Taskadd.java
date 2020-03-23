@@ -30,8 +30,11 @@ public class Taskadd extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String newTask = ed.getText().toString();
-                String statusTask = status.getText().toString();
-                final Task task = new Task(newTask);
+
+
+                Execution myNewStatusTask = Execution.getExecution(status.getText().toString().trim());
+                final Task task = new Task(newTask, myNewStatusTask);
+
 
                 AlertDialog.Builder alert = new AlertDialog.Builder(Taskadd.this);
                 alert.setTitle("Your task is");
